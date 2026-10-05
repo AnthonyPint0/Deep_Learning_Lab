@@ -12,22 +12,29 @@ A comprehensive collection of **15 Deep Learning laboratory experiments and prac
 
 ## 📑 Table of Contents
 
-- [Overview](#-overview)
-- [Repository Structure & Index](#-repository-structure--index)
-- [Detailed Experiment Breakdown](#-detailed-experiment-breakdown)
-  - [1. Foundations & Perceptrons (`pg1` - `pg5`)](#1-foundations--perceptrons)
-  - [2. Classical & Competitive Learning Networks (`pg6` - `pg9`, `pg11`)](#2-classical--competitive-learning-networks)
-  - [3. Deep Neural Networks & Computer Vision (`pg10`, `pg12`, `pg13`)](#3-deep-neural-networks--computer-vision)
-  - [4. Sequential & Recurrent Architectures (`pg14`, `pg15`)](#4-sequential--recurrent-architectures)
-- [Prerequisites & Installation](#-prerequisites--installation)
-- [How to Run](#-how-to-run)
-- [Tech Stack](#-tech-stack)
+- [🧠 Deep Learning Lab](#-deep-learning-lab)
+  - [📑 Table of Contents](#-table-of-contents)
+  - [🔬 Overview](#-overview)
+  - [📂 Repository Structure \& Index](#-repository-structure--index)
+  - [🔍 Detailed Experiment Breakdown](#-detailed-experiment-breakdown)
+    - [1. Foundations \& Perceptrons](#1-foundations--perceptrons)
+    - [2. Classical \& Competitive Learning Networks](#2-classical--competitive-learning-networks)
+    - [3. Deep Neural Networks \& Computer Vision](#3-deep-neural-networks--computer-vision)
+    - [4. Sequential \& Recurrent Architectures](#4-sequential--recurrent-architectures)
+  - [🛠️ Prerequisites \& Installation](#️-prerequisites--installation)
+    - [Requirements](#requirements)
+    - [Setup Virtual Environment](#setup-virtual-environment)
+    - [Install Dependencies](#install-dependencies)
+  - [🚀 How to Run](#-how-to-run)
+  - [💻 Tech Stack](#-tech-stack)
+  - [📄 License](#-license)
 
 ---
 
 ## 🔬 Overview
 
 This repository is structured for academic coursework, laboratory practicals, and self-study in Artificial Neural Networks and Deep Learning. It provides:
+
 - **Scratch Implementations:** Step-by-step mathematical coding of gradient descent, perceptrons, backpropagation, RBF, LVQ, SOM, and ART without high-level black-box abstractions.
 - **Framework-Powered Models:** Deep neural networks, CNNs, Transfer Learning, and RNNs (LSTM & GRU) implemented using **TensorFlow** and **Keras**.
 - **Interactive & Visual Tools:** Menu-driven execution and Matplotlib visualizations for activation responses, decision boundaries, training curves, and confusion matrices.
@@ -36,23 +43,23 @@ This repository is structured for academic coursework, laboratory practicals, an
 
 ## 📂 Repository Structure & Index
 
-| File | Experiment / Topic | Key Concepts & Algorithms | Dataset |
-| :--- | :--- | :--- | :--- |
-| [`pg1.py`](pg1.py) | **Activation Functions** | Sigmoid, Tanh, ReLU, Softmax, formula evaluation & curves | Synthetic / Array |
-| [`pg2.py`](pg2.py) | **Single Layer Perceptron** | Perceptron learning rule, linearly separable logic (AND, OR) | Binary Truth Tables |
-| [`pg3.py`](pg3.py) | **Gradient Descent Optimization** | Univariate Linear Regression, analytical gradients, MSE loss | Synthetic Linear Data |
-| [`pg4.py`](pg4.py) | **Multilayer Perceptron (MLP)** | Full forward & backward propagation, gradient chain rule | Loan Approval Dataset |
-| [`pg5.py`](pg5.py) | **XOR Classification with MLP** | Non-linear classification, hidden layer representation, backpropagation | Non-linear XOR Gate |
-| [`pg6.py`](pg6.py) | **Radial Basis Function (RBF) Network** | Gaussian RBF kernel hidden layer, pseudo-inverse weight solver | Iris Dataset |
-| [`pg7.py`](pg7.py) | **Learning Vector Quantization (LVQ)** | Supervised competitive learning, prototype vectors, Euclidean metric | Iris Dataset |
-| [`pg8.py`](pg8.py) | **Self-Organizing Maps (SOM)** | Kohonen map, Best Matching Unit (BMU), 2D grid topological clustering | Iris Dataset |
-| [`pg9.py`](pg9.py) | **Adaptive Resonance Theory (ART)** | Fuzzy ART, vigilance parameter test, dynamic cluster creation | Iris Dataset |
-| [`pg10.py`](pg10.py) | **Dropout Regularization** | Overfitting mitigation, dropout layers, validation curve comparison | MNIST Digits |
-| [`pg11.py`](pg11.py) | **Competitive Learning** | Winner-Take-All (WTA) unsupervised clustering | Iris Dataset |
-| [`pg12.py`](pg12.py) | **Convolutional Neural Networks (CNN)** | Conv2D, Max Pooling, feature extraction, confusion matrix | MNIST Digits |
-| [`pg13.py`](pg13.py) | **Transfer Learning with VGG16** | Pretrained feature extractor, spatial adaptation, fine-tuning | Iris (2D transformed) |
-| [`pg14.py`](pg14.py) | **Time Series Forecasting (MLP)** | Sequential autoregression, windowed inputs, next-step prediction | Numerical Sequence |
-| [`pg15.py`](pg15.py) | **Recurrent Neural Networks (LSTM vs GRU)** | Sequence learning, gating mechanisms, loss & performance comparison | Numerical Sequence |
+| File                 | Experiment / Topic                          | Key Concepts & Algorithms                                               | Dataset               |
+| :------------------- | :------------------------------------------ | :---------------------------------------------------------------------- | :-------------------- |
+| [`pg01.py`](pg01.py) | **Activation Functions**                    | Sigmoid, Tanh, ReLU, Softmax, formula evaluation & curves               | Synthetic / Array     |
+| [`pg02.py`](pg02.py) | **Single Layer Perceptron**                 | Perceptron learning rule, linearly separable logic (AND, OR)            | Binary Truth Tables   |
+| [`pg03.py`](pg03.py) | **Gradient Descent Optimization**           | Univariate Linear Regression, analytical gradients, MSE loss            | Synthetic Linear Data |
+| [`pg04.py`](pg04.py) | **Multilayer Perceptron (MLP)**             | Full forward & backward propagation, gradient chain rule                | Loan Approval Dataset |
+| [`pg05.py`](pg05.py) | **XOR Classification with MLP**             | Non-linear classification, hidden layer representation, backpropagation | Non-linear XOR Gate   |
+| [`pg06.py`](pg06.py) | **Radial Basis Function (RBF) Network**     | Gaussian RBF kernel hidden layer, pseudo-inverse weight solver          | Iris Dataset          |
+| [`pg07.py`](pg07.py) | **Learning Vector Quantization (LVQ)**      | Supervised competitive learning, prototype vectors, Euclidean metric    | Iris Dataset          |
+| [`pg08.py`](pg08.py) | **Self-Organizing Maps (SOM)**              | Kohonen map, Best Matching Unit (BMU), 2D grid topological clustering   | Iris Dataset          |
+| [`pg09.py`](pg09.py) | **Adaptive Resonance Theory (ART)**         | Fuzzy ART, vigilance parameter test, dynamic cluster creation           | Iris Dataset          |
+| [`pg10.py`](pg10.py) | **Dropout Regularization**                  | Overfitting mitigation, dropout layers, validation curve comparison     | MNIST Digits          |
+| [`pg11.py`](pg11.py) | **Competitive Learning**                    | Winner-Take-All (WTA) unsupervised clustering                           | Iris Dataset          |
+| [`pg12.py`](pg12.py) | **Convolutional Neural Networks (CNN)**     | Conv2D, Max Pooling, feature extraction, confusion matrix               | MNIST Digits          |
+| [`pg13.py`](pg13.py) | **Transfer Learning with VGG16**            | Pretrained feature extractor, spatial adaptation, fine-tuning           | Iris (2D transformed) |
+| [`pg14.py`](pg14.py) | **Time Series Forecasting (MLP)**           | Sequential autoregression, windowed inputs, next-step prediction        | Numerical Sequence    |
+| [`pg15.py`](pg15.py) | **Recurrent Neural Networks (LSTM vs GRU)** | Sequence learning, gating mechanisms, loss & performance comparison     | Numerical Sequence    |
 
 ---
 
@@ -60,42 +67,42 @@ This repository is structured for academic coursework, laboratory practicals, an
 
 ### 1. Foundations & Perceptrons
 
-- **[`pg1.py`](pg1.py) - Activation Functions & Plotting**
+- **[`pg01.py`](pg01.py) - Activation Functions & Plotting**
   - Implements **Sigmoid**, **Hyperbolic Tangent (Tanh)**, **Rectified Linear Unit (ReLU)**, and **Softmax**.
   - Provides an interactive CLI menu to inspect numerical outputs and plot continuous curves using `matplotlib`.
 
-- **[`pg2.py`](pg2.py) - Single Layer Perceptron (SLP)**
+- **[`pg02.py`](pg02.py) - Single Layer Perceptron (SLP)**
   - Implements Rosenblatt's Perceptron learning algorithm from scratch.
   - Demonstrates linear separability by training decision boundaries for **AND** and **OR** logic gates.
 
-- **[`pg3.py`](pg3.py) - Gradient Descent Optimization**
+- **[`pg03.py`](pg03.py) - Gradient Descent Optimization**
   - Pure Python implementation of Batch Gradient Descent to minimize Mean Squared Error (MSE).
   - Iteratively updates slope ($m$) and intercept ($b$) for linear curve fitting.
 
-- **[`pg4.py`](pg4.py) - Multilayer Perceptron with Backpropagation**
+- **[`pg04.py`](pg04.py) - Multilayer Perceptron with Backpropagation**
   - Full NumPy implementation of a 2-layer neural network with input, hidden, and output layers.
   - Derives gradients via the chain rule to update weights and biases on a multi-feature loan approval dataset.
 
-- **[`pg5.py`](pg5.py) - Solving the Non-Linear XOR Problem**
+- **[`pg05.py`](pg05.py) - Solving the Non-Linear XOR Problem**
   - Overcomes the single-layer perceptron limitation by employing a hidden layer with non-linear activation (Tanh) and output activation (Sigmoid).
 
 ---
 
 ### 2. Classical & Competitive Learning Networks
 
-- **[`pg6.py`](pg6.py) - Radial Basis Function (RBF) Network**
+- **[`pg06.py`](pg06.py) - Radial Basis Function (RBF) Network**
   - Transforms input space into non-linear Gaussian kernel distances relative to chosen prototype centers.
   - Computes optimal output weights analytically via Moore-Penrose pseudo-inverse (`np.linalg.pinv`).
 
-- **[`pg7.py`](pg7.py) - Learning Vector Quantization (LVQ)**
+- **[`pg07.py`](pg07.py) - Learning Vector Quantization (LVQ)**
   - Supervised competitive network with class prototype vectors.
   - Rewards the winner neuron for correct classification and penalizes it for incorrect classification.
 
-- **[`pg8.py`](pg8.py) - Self-Organizing Maps (SOM)**
+- **[`pg08.py`](pg08.py) - Self-Organizing Maps (SOM)**
   - Implements Kohonen's unsupervised clustering network.
   - Maps multi-dimensional Iris features onto a 2D topological grid ($2 \times 2$) by computing Best Matching Units (BMUs).
 
-- **[`pg9.py`](pg9.py) - Adaptive Resonance Theory (ART)**
+- **[`pg09.py`](pg09.py) - Adaptive Resonance Theory (ART)**
   - Demonstrates stability-plasticity dilemma resolution using Fuzzy ART principles.
   - Features dynamic cluster allocation regulated by a user-defined vigilance threshold ($\rho = 0.7$).
 
@@ -133,6 +140,7 @@ This repository is structured for academic coursework, laboratory practicals, an
 ## 🛠️ Prerequisites & Installation
 
 ### Requirements
+
 - **Python 3.8+**
 - Git
 
@@ -167,16 +175,16 @@ Execute any lab program directly with Python:
 
 ```bash
 # Activation functions (Interactive Menu + Plotting)
-python pg1.py
+python pg01.py
 
 # Perceptron for logic gates
-python pg2.py
+python pg02.py
 
 # Multilayer Perceptron backpropagation
-python pg4.py
+python pg04.py
 
 # Self-Organizing Maps
-python pg8.py
+python pg08.py
 
 # CNN classification on MNIST digits
 python pg12.py
