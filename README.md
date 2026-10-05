@@ -43,23 +43,23 @@ This repository is structured for academic coursework, laboratory practicals, an
 
 ## 📂 Repository Structure & Index
 
-| File                 | Experiment / Topic                          | Key Concepts & Algorithms                                               | Dataset               | Mock Test     |
-| :------------------- | :------------------------------------------ | :---------------------------------------------------------------------- | :-------------------- | :------------ |
-| [`pg01.py`](pg01.py) | **Activation Functions**                    | Sigmoid, Tanh, ReLU, Softmax, formula evaluation & curves               | Synthetic / Array     | ✅ It's there |
-| [`pg02.py`](pg02.py) | **Single Layer Perceptron**                 | Perceptron learning rule, linearly separable logic (AND, OR)            | Binary Truth Tables   | ✅ It's there |
-| [`pg03.py`](pg03.py) | **Gradient Descent Optimization**           | Univariate Linear Regression, analytical gradients, MSE loss            | Synthetic Linear Data | ❌ Not there  |
-| [`pg04.py`](pg04.py) | **Multilayer Perceptron (MLP)**             | Full forward & backward propagation, gradient chain rule                | Loan Approval Dataset | ✅ It's there |
-| [`pg05.py`](pg05.py) | **XOR Classification with MLP**             | Non-linear classification, hidden layer representation, backpropagation | Non-linear XOR Gate   | ✅ It's there |
-| [`pg06.py`](pg06.py) | **Radial Basis Function (RBF) Network**     | Gaussian RBF kernel hidden layer, pseudo-inverse weight solver          | Iris Dataset          | ✅ It's there |
-| [`pg07.py`](pg07.py) | **Learning Vector Quantization (LVQ)**      | Supervised competitive learning, prototype vectors, Euclidean metric    | Iris Dataset          | ✅ It's there |
-| [`pg08.py`](pg08.py) | **Self-Organizing Maps (SOM)**              | Kohonen map, Best Matching Unit (BMU), 2D grid topological clustering   | Iris Dataset          | ✅ It's there |
-| [`pg09.py`](pg09.py) | **Adaptive Resonance Theory (ART)**         | Fuzzy ART, vigilance parameter test, dynamic cluster creation           | Iris Dataset          | ✅ It's there |
-| [`pg10.py`](pg10.py) | **Dropout Regularization**                  | Overfitting mitigation, dropout layers, validation curve comparison     | MNIST Digits          | ❌ Not there  |
-| [`pg11.py`](pg11.py) | **Competitive Learning**                    | Winner-Take-All (WTA) unsupervised clustering                           | Iris Dataset          | ❌ Not there  |
-| [`pg12.py`](pg12.py) | **Convolutional Neural Networks (CNN)**     | Conv2D, Max Pooling, feature extraction, confusion matrix               | MNIST Digits          | ✅ It's there |
-| [`pg13.py`](pg13.py) | **Transfer Learning with VGG16**            | Pretrained feature extractor, spatial adaptation, fine-tuning           | Iris (2D transformed) | ✅ It's there |
-| [`pg14.py`](pg14.py) | **Time Series Forecasting (MLP)**           | Sequential autoregression, windowed inputs, next-step prediction        | Numerical Sequence    | ✅ It's there |
-| [`pg15.py`](pg15.py) | **Recurrent Neural Networks (LSTM vs GRU)** | Sequence learning, gating mechanisms, loss & performance comparison     | Numerical Sequence    | ✅ It's there |
+| File                 | Experiment / Topic                          | Key Concepts & Algorithms                                               | Dataset               | Mock Test |
+| :------------------- | :------------------------------------------ | :---------------------------------------------------------------------- | :-------------------- | :-------- |
+| [`pg01.py`](pg01.py) | **Activation Functions**                    | Sigmoid, Tanh, ReLU, Softmax, formula evaluation & curves               | Synthetic / Array     | ✅        |
+| [`pg02.py`](pg02.py) | **Single Layer Perceptron**                 | Perceptron learning rule, linearly separable logic (AND, OR)            | Binary Truth Tables   | ✅        |
+| [`pg03.py`](pg03.py) | **Gradient Descent Optimization**           | Univariate Linear Regression, analytical gradients, MSE loss            | Synthetic Linear Data | ❌        |
+| [`pg04.py`](pg04.py) | **Multilayer Perceptron (MLP)**             | Full forward & backward propagation, gradient chain rule                | Loan Approval Dataset | ✅        |
+| [`pg05.py`](pg05.py) | **XOR Classification with MLP**             | Non-linear classification, hidden layer representation, backpropagation | Non-linear XOR Gate   | ✅        |
+| [`pg06.py`](pg06.py) | **Radial Basis Function (RBF) Network**     | Gaussian RBF kernel hidden layer, pseudo-inverse weight solver          | Iris Dataset          | ✅        |
+| [`pg07.py`](pg07.py) | **Learning Vector Quantization (LVQ)**      | Supervised competitive learning, prototype vectors, Euclidean metric    | Iris Dataset          | ✅        |
+| [`pg08.py`](pg08.py) | **Self-Organizing Maps (SOM)**              | Kohonen map, Best Matching Unit (BMU), 2D grid topological clustering   | Iris Dataset          | ✅        |
+| [`pg09.py`](pg09.py) | **Adaptive Resonance Theory (ART)**         | Fuzzy ART, vigilance parameter test, dynamic cluster creation           | Iris Dataset          | ✅        |
+| [`pg10.py`](pg10.py) | **Dropout Regularization**                  | Overfitting mitigation, dropout layers, validation curve comparison     | MNIST Digits          | ❌        |
+| [`pg11.py`](pg11.py) | **Competitive Learning**                    | Winner-Take-All (WTA) unsupervised clustering                           | Iris Dataset          | ❌        |
+| [`pg12.py`](pg12.py) | **Convolutional Neural Networks (CNN)**     | Conv2D, Max Pooling, feature extraction, confusion matrix               | MNIST Digits          | ✅        |
+| [`pg13.py`](pg13.py) | **Transfer Learning with VGG16**            | Pretrained feature extractor, spatial adaptation, fine-tuning           | Iris (2D transformed) | ✅        |
+| [`pg14.py`](pg14.py) | **Time Series Forecasting (MLP)**           | Sequential autoregression, windowed inputs, next-step prediction        | Numerical Sequence    | ✅        |
+| [`pg15.py`](pg15.py) | **Recurrent Neural Networks (LSTM vs GRU)** | Sequence learning, gating mechanisms, loss & performance comparison     | Numerical Sequence    | ✅        |
 
 ---
 
