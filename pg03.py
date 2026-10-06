@@ -9,7 +9,7 @@ m = 0       # slope
 b = 0       # intercept
 
 lr = 0.01   # learning rate
-epochs = 1000
+epochs = 2000
 n = len(x)
 
 # Gradient Descent
@@ -19,16 +19,10 @@ for i in range(epochs):
     y_pred = [m * xi + b for xi in x]
 
     # Calculate gradients
-    dm = (-2 / n) * sum(
-        x[j] * (y[j] - y_pred[j])
-        for j in range(n)
-    )
+    dm = (-2 / n) * sum( x[j] * (y[j] - y_pred[j]) for j in range(n) )
 
-    db = (-2 / n) * sum(
-        y[j] - y_pred[j]
-        for j in range(n)
-    )
-
+    db = (-2 / n) * sum( y[j] - y_pred[j] for j in range(n) )
+    
     # Update m and b
     m = m - lr * dm
     b = b - lr * db
